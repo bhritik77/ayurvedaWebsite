@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rawat Ayurvedic & Panchkarma Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="Logo" class="h-10 w-auto"/>
+        <span class="text-lg md:text-xl font-semibold text-blue-600">Rawat Ayurvedic & Panchkarma Center</span>
+      </a>
+
+      <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-[#8BB96D]">Home</a>
+        <a href="about.html" class="hover:text-[#8BB96D]">About</a>
+        <a href="services.html" class="hover:text-[#8BB96D]">Services</a>
+        <a href="contact.html" class="hover:text-[#8BB96D]">Contact</a>
+      </nav>
+
+      <!-- Mobile Button -->
+      <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="index.html" class="block py-2 text-gray-700">Home</a>
+      <a href="about.html" class="block py-2 text-gray-700">About</a>
+      <a href="doctor.html" class="block py-2 text-gray-700">Doctor</a>
+      <a href="services.html" class="block py-2 text-gray-700">Services</a>
+      <a href="panchakarma.html" class="block py-2 text-gray-700">Panchakarma</a>
+      <a href="benefits.html" class="block py-2 text-gray-700">Benefits</a>
+      <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen bg-cover bg-center flex items-center justify-center relative" style="background-image: url('images/hero.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+    <div class="z-10 text-white text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Ayurveda for Wellness & Rejuvenation</h1>
+      <p class="text-lg md:text-xl mb-6">5000 Years of Ancient Wisdom, Now at Your Service</p>
+      <a href="contact.html" class="bg-[#8BB96D] text-white font-semibold py-2 px-6 rounded-full hover:bg-[#7AAC5C]">Book Appointment</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 px-4 md:px-16 bg-[#E6F4EA]" id="about">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <img src="images/about.png" alt="About Ayurveda" class="rounded-xl shadow-lg">
+      <div>
+        <h2 class="text-3xl font-bold text-[#7AAC5C] mb-4">About Ayurveda</h2>
+        <p class="text-gray-700 text-justify mb-6">
+          Ayurveda is derived from Sanskrit words "Ayur" (life) and "Veda" (science), meaning "Science of Life". It is one of the world's oldest holistic healing systems, developed more than 5000 years ago in India. Ayurveda emphasizes balance between the mind, body, and spirit to promote health and prevent disease.
+          <br/><br/>
+          The fundamental aim of Ayurveda is to protect the health of the healthy and to cure the disease of the ailing. It considers every individual unique and treats the root cause of disease, not just the symptoms.
+        </p>
+        <a href="about.html" class="inline-block bg-[#8BB96D] text-white font-semibold py-3 px-6 rounded-full hover:bg-[#7AAC5C] transition">
+          Learn More About Ayurveda
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctor Section -->
+  <section class="py-16 px-4 md:px-16 bg-white" id="doctor">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="flex justify-center">
+          <img src="images/doctor.png" alt="Dr. Sangeeta Rawat" class="w-full max-w-sm rounded-xl shadow-lg object-cover" />
+        </div>
+        <div>
+          <h2 class="text-4xl font-bold text-[#7AAC5C] mb-4">Meet the Doctor</h2>
+          <h3 class="text-2xl font-semibold mb-2">Dr. Sangeeta Rawat</h3>
+          <p class="text-gray-700 mb-2">B.A.M.S (Gurukul Kangri Govt. Ayurvedic College)</p>
+          <p class="text-gray-700 mb-4">Ex. Medical Officer – Govt. Services, Uttarakhand & H.I.H.T Jolly Grant</p>
+          <p class="text-gray-600 text-justify">
+            With over 20 years of experience, Dr. Rawat specializes in chronic disease management through Panchakarma and traditional Ayurvedic healing. Her approach is rooted in personalized care, using herbal remedies, detox therapies, and lifestyle consultations to restore balance and vitality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 px-4 md:px-16 bg-[#E6F4EA]" id="services">
+    <h2 class="text-3xl font-bold text-center text-[#7AAC5C] mb-10">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="images/shirodhara.png" alt="Shirodhara" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Shirodhara</h3>
+          <p class="text-gray-600 text-justify">
+            A traditional therapy where a stream of medicated oil is poured on the forehead. It helps relieve stress, insomnia, anxiety, depression, and improves mental clarity.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="images/janubasti.png" alt="Janubasti" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Janubasti</h3>
+          <p class="text-gray-600 text-justify">
+            A warm medicated oil therapy focused on knee joints, effective in osteoarthritis, ligament injuries, joint stiffness and degeneration-related pain.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="images/katibasti.png" alt="Katibasti" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Katibasti</h3>
+          <p class="text-gray-600 text-justify">
+            A healing oil retention therapy for back pain, sciatica, and disc issues. It improves spinal flexibility and reduces inflammation in the lumbar region.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- CTA Button -->
+    <div class="text-center">
+      <a href="services.html" class="inline-block bg-[#8BB96D] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#7AAC5C] transition">
+        View All Services
+      </a>
+    </div>
+  </section>
+
+  <!-- Panchakarma Section -->
+  <section class="py-16 px-4 md:px-16 bg-white" id="panchakarma">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <img src="images/panchkarma.png" alt="Panchakarma" class="rounded-xl shadow-lg">
+      <div>
+        <h2 class="text-3xl font-bold text-[#7AAC5C] mb-4">Panchakarma Therapy</h2>
+        <p class="text-gray-700 text-justify">
+          Panchakarma is a set of five powerful Ayurvedic procedures designed for deep cleansing and rejuvenation. These include Vamana (emesis), Virechana (purgation), Basti (medicated enema), Nasya (nasal cleansing), and Raktamokshana (blood detox).
+          <br/><br/>
+          These therapies help eliminate toxins, balance doshas, improve digestion, and strengthen the immune system. It is prescribed individually based on body constitution and disease condition.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-16 px-4 md:px-16 bg-[#E6F4EA]" id="benefits">
+    <h2 class="text-3xl font-bold text-center text-[#7AAC5C] mb-8">Who Can Benefit</h2>
+    <div class="max-w-4xl mx-auto">
+      <ul class="space-y-4 text-gray-700 list-disc pl-5 text-justify">
+        <li>Individuals with chronic joint disorders such as arthritis, sciatica, ankylosing spondylitis, and back pain.</li>
+        <li>People suffering from stress-related disorders like anxiety, depression, insomnia, and psychosomatic imbalance.</li>
+        <li>Those with digestive complaints including bloating, constipation, indigestion, acid reflux, and IBS.</li>
+        <li>Pediatric cases like cerebral palsy, motor developmental delays, and muscular dystrophy.</li>
+        <li>Cancer patients after chemotherapy/radiation for body detoxification and recovery.</li>
+        <li>Anyone looking to rejuvenate, balance metabolism, improve energy levels, and boost immunity naturally.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="py-20 px-4 md:px-16 bg-white text-center" id="contact">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#7AAC5C] mb-6">Begin Your Healing with Ayurveda</h2>
+    <p class="text-gray-700 text-base md:text-lg max-w-3xl mx-auto mb-8">
+      Rebalance your mind, body, and soul through personalized Panchakarma therapies, doctor consultations, and holistic Ayurvedic care. Let us help you restore natural health.
+    </p>
+    <a href="contact.html" class="inline-block bg-[#8BB96D] text-white font-semibold text-base py-3 px-8 rounded-full hover:bg-[#7AAC5C] transition duration-300">
+      Book Your Consultation Now
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#E6F4EA] text-black py-6 text-center">
+    <p>&copy; 2025 Rawat Ayurvedic & Panchkarma Center. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
