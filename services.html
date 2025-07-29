@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Rawat Ayurvedic & Panchkarma Center</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="Logo" class="h-10 w-auto"/>
+        <span class="text-lg md:text-xl font-semibold text-blue-600">Rawat Ayurvedic & Panchkarma Center</span>
+      </a>
+      <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-[#8BB96D]">Home</a>
+        <a href="about.html" class="hover:text-[#8BB96D]">About</a>
+        <a href="services.html" class="hover:text-[#8BB96D]">Services</a>
+        <a href="contact.html" class="hover:text-[#8BB96D]">Contact</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="index.html" class="block py-2 text-gray-700">Home</a>
+      <a href="about.html" class="block py-2 text-gray-700">About</a>
+      <a href="services.html" class="block py-2 text-gray-700">Services</a>
+      <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<section class="h-[60vh] relative flex items-center justify-center">
+
+  <!-- Background Image with Opacity -->
+  <div class="absolute inset-0 bg-[url('images/hero.png')] bg-cover bg-center"></div>
+
+    <div class="absolute inset-0 bg-black opacity-20 z-0"></div>
+
+
+  <!-- Content -->
+  <div class="z-10 text-white text-center px-4">
+    <h1 class="text-4xl md:text-5xl font-bold">Our Ayurvedic Services</h1>
+    <p class="mt-4 text-lg md:text-xl">
+      Authentic care for chronic conditions, detox & total wellness
+    </p>
+  </div>
+  
+</section>
+
+
+  <!-- Section 1: Consultation -->
+  <section class="py-16 px-4 md:px-16 bg-[#E6F4EA]">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <img src="images/consultation.png" alt="Consultation" class="rounded-xl shadow-lg"/>
+      <div>
+        <h2 class="text-3xl font-bold text-[#8B5E3C] mb-4">Ayurvedic Consultation & Chronic Disorders</h2>
+        <p class="text-gray-700 text-justify">
+          Get a personalized Ayurvedic diagnosis by experienced doctors for a wide range of chronic and lifestyle disorders. Every patient is evaluated based on dosha imbalance, prakriti, digestion, and emotional factors. 
+          <br/><br/>
+          Herbal medicines, therapies, and diet are tailored for long-lasting healing from the root cause.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Panchakarma Program -->
+  <section class="py-16 px-4 md:px-16 bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-bold text-[#8B5E3C] mb-4">Panchakarma Therapy Program</h2>
+        <p class="text-gray-700 text-justify">
+          Panchakarma is Ayurveda’s most powerful detox program. It removes deep-rooted toxins, balances doshas, improves metabolism, and boosts immunity. Our center offers all five procedures:
+        </p>
+        <ul class="list-disc pl-5 text-gray-700 mt-4 space-y-2">
+          <li>Vamana – Therapeutic emesis</li>
+          <li>Virechana – Purgation therapy</li>
+          <li>Basti – Herbal oil enema</li>
+          <li>Nasya – Nasal cleansing therapy</li>
+          <li>Raktamokshana – Blood detox</li>
+        </ul>
+      </div>
+      <img src="images/panchkarma-detail.png" alt="Panchakarma" class="rounded-xl shadow-lg"/>
+    </div>
+  </section>
+
+  <!-- Section 3: Specific Treatments -->
+  <section class="py-16 px-4 md:px-16 bg-[#E6F4EA]">
+    <h2 class="text-3xl font-bold text-center text-[#8B5E3C] mb-10">Our Signature Ayurvedic Therapies</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+        <img src="images/shirodhara.png" alt="Shirodhara" class="w-full h-40 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-semibold mb-2">Shirodhara</h3>
+        <p class="text-gray-600">Continuous oil stream therapy to treat insomnia, anxiety, stress & memory issues.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+        <img src="images/shirobasti.png" alt="Shirobasti" class="w-full h-40 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-semibold mb-2">Shirobasti</h3>
+        <p class="text-gray-600">Retaining medicated oil on the scalp – helpful in neurological disorders & hair fall.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+        <img src="images/pindasweda.png" alt="Pindasweda" class="w-full h-40 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-semibold mb-2">Pindasweda</h3>
+        <p class="text-gray-600">Herbal poultice massage – relieves joint pain, stiffness & improves circulation.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+        <img src="images/navarakizhi.png" alt="Navarakizhi" class="w-full h-40 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-semibold mb-2">Navarakizhi</h3>
+        <p class="text-gray-600">Therapeutic rice massage for nourishment, muscular dystrophy & nervous issues.</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+        <img src="images/katibasti.png" alt="Katibasti" class="w-full h-40 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-semibold mb-2">Katibasti</h3>
+        <p class="text-gray-600">Lower back oil therapy for pain, disc prolapse, and spinal issues.</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+        <img src="images/netratarpana.png" alt="Netratarpana" class="w-full h-40 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-semibold mb-2">Netratarpana</h3>
+        <p class="text-gray-600">Eye rejuvenation with medicated ghee – relieves strain & nourishes vision.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Dietary Consultation -->
+  <section class="py-16 px-4 md:px-16 bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <img src="images/diet.png" alt="Dietary Consultation" class="rounded-xl shadow-lg" />
+      <div>
+        <h2 class="text-3xl font-bold text-[#8B5E3C] mb-4">Ayurvedic Dietary Consultation</h2>
+        <p class="text-gray-700 text-justify">
+          Food is the first medicine in Ayurveda. Our dietary consultations include:
+        </p>
+        <ul class="list-disc pl-5 text-gray-700 mt-4 space-y-2">
+          <li>Food planning based on your dosha</li>
+          <li>Seasonal diet suggestions (Ritucharya)</li>
+          <li>Digestive fire balancing (Agni)</li>
+          <li>Food combining rules (Viruddh Aahar)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Yoga & Meditation -->
+  <section class="py-16 px-4 md:px-16 bg-[#E6F4EA]">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-bold text-[#8B5E3C] mb-4">Yoga & Meditation</h2>
+        <p class="text-gray-700 text-justify">
+          As a complementary therapy, we offer regular Yoga & meditation sessions to:
+        </p>
+        <ul class="list-disc pl-5 text-gray-700 mt-4 space-y-2">
+          <li>Improve flexibility and core strength</li>
+          <li>Calm the nervous system and release stress</li>
+          <li>Support deep detoxification and organ health</li>
+          <li>Promote emotional balance and sleep</li>
+        </ul>
+      </div>
+      <img src="images/yoga.png" alt="Yoga & Meditation" class="rounded-xl shadow-lg"/>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-20 px-4 md:px-16 bg-white text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#7AAC5C] mb-6">Begin Your Healing with Ayurveda</h2>
+    <p class="text-gray-700 text-base md:text-lg max-w-3xl mx-auto mb-8">
+      Book a personalized consultation or explore our therapies to restore your health naturally.
+    </p>
+    <a href="contact.html" class="inline-block bg-[#8BB96D] text-white font-semibold text-base py-3 px-8 rounded-full hover:bg-[#7AAC5C] transition duration-300">
+      Book Your Appointment
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#E6F4EA] text-black py-6 text-center">
+    <p>&copy; 2025 Rawat Ayurvedic & Panchkarma Center. All rights reserved.</p>
+  </footer>
+
+  <!-- Toggle Menu Script -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

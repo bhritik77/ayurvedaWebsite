@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rawat Ayurvedic & Panchkarma Center</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="scroll-smooth">
 
@@ -36,23 +36,30 @@
     <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
       <a href="index.html" class="block py-2 text-gray-700">Home</a>
       <a href="about.html" class="block py-2 text-gray-700">About</a>
-      <a href="doctor.html" class="block py-2 text-gray-700">Doctor</a>
       <a href="services.html" class="block py-2 text-gray-700">Services</a>
-      <a href="panchakarma.html" class="block py-2 text-gray-700">Panchakarma</a>
-      <a href="benefits.html" class="block py-2 text-gray-700">Benefits</a>
       <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="h-screen bg-cover bg-center flex items-center justify-center relative" style="background-image: url('images/hero.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
-    <div class="z-10 text-white text-center px-4">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Ayurveda for Wellness & Rejuvenation</h1>
-      <p class="text-lg md:text-xl mb-6">5000 Years of Ancient Wisdom, Now at Your Service</p>
-      <a href="contact.html" class="bg-[#8BB96D] text-white font-semibold py-2 px-6 rounded-full hover:bg-[#7AAC5C]">Book Appointment</a>
-    </div>
-  </section>
+ <!-- Hero Section -->
+<section class="h-screen relative flex items-center justify-center">
+
+  <!-- Background Image with Opacity -->
+  <div class="absolute inset-0 bg-[url('images/hero.png')] bg-cover bg-center z-0"></div>
+
+  <div class="absolute inset-0 bg-black opacity-20 z-0"></div>
+
+  <!-- Content -->
+  <div class="z-10 text-white text-center px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Ayurveda for Wellness & Rejuvenation</h1>
+    <p class="text-lg md:text-xl mb-6"></p>
+    <a href="contact.html" class="bg-[#8BB96D] text-white font-semibold py-2 px-6 rounded-full hover:bg-[#7AAC5C]">
+      Book Appointment
+    </a>
+  </div>
+</section>
+
+
 
   <!-- About Section -->
   <section class="py-16 px-4 md:px-16 bg-[#E6F4EA]" id="about">
