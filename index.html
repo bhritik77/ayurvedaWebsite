@@ -5,6 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rawat Ayurvedic & Panchkarma Center</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+  }
+
+  .slider-image {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .hero-heading {
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .hero-subheading,
+  .hero-cta {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  img.rounded-full {
+    width: 96px;
+    height: 96px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-slide {
+    animation: slide 25s linear infinite;
+  }
+
+  @media (min-width: 768px) {
+    .animate-slide-lg {
+      animation-duration: 40s;
+    }
+  }
+</style>
+
 </head>
 <body class="scroll-smooth">
 
@@ -13,14 +62,14 @@
     <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
       <a href="index.html" class="flex items-center space-x-2">
         <img src="images/logo.png" alt="Logo" class="h-15 w-auto p-1"/>
-        <h1 class="text-xs md:text-sm font-bold">Rawat Ayurvedic & <br>Panchkarma Center</h1>
+        <h1 class="text-xs md:text-sm font-bold text-blue-600">Rawat Ayurvedic & <br>Panchkarma Center</h1>
       </a>
 
       <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
-        <a href="index.html" class="hover:text-[#8BB96D]">Home</a>
-        <a href="about.html" class="hover:text-[#8BB96D]">About</a>
-        <a href="services.html" class="hover:text-[#8BB96D]">Services</a>
-        <a href="contact.html" class="hover:text-[#8BB96D]">Contact</a>
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="services.html" class="hover:text-blue-600">Services</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact</a>
       </nav>
 
       <!-- Mobile Button -->
@@ -41,39 +90,60 @@
     </div>
   </header>
 
+   <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/9634171715" target="_blank" 
+   class="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-colors z-1000">
+    <!-- WhatsApp Icon (SVG) -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12.001 2C6.478 2 2 6.477 2 11.999c0 2.12.625 4.085 1.71 5.74L2 22l4.356-1.681A9.963 9.963 0 0 0 12.001 22c5.523 0 10-4.478 10-10.001S17.524 2 12.001 2zm0 18.182a8.159 8.159 0 0 1-4.149-1.139l-.296-.175-2.583.997.988-2.515-.192-.308A8.162 8.162 0 1 1 20.182 12a8.162 8.162 0 0 1-8.181 8.182zm4.465-6.211c-.244-.122-1.448-.715-1.673-.797-.224-.081-.387-.122-.55.122-.163.244-.63.797-.773.961-.142.163-.285.183-.529.061-.244-.122-1.031-.38-1.962-1.211-.725-.647-1.215-1.447-1.357-1.691-.143-.244-.015-.375.107-.497.11-.11.244-.285.366-.428.122-.143.163-.244.244-.407.081-.163.041-.305-.02-.427-.061-.122-.55-1.326-.754-1.815-.198-.476-.398-.411-.55-.418l-.468-.008c-.163 0-.428.061-.651.305s-.854.833-.854 2.036  .873 2.365.995 2.528c.122.163 1.717 2.622 4.158 3.677.582.25 1.036.398 1.39.509.584.186 1.116.16 1.538.097.469-.07 1.448-.592 1.653-1.164.204-.571.204-1.06.143-1.164-.061-.102-.224-.163-.468-.285z"/>
+    </svg>
+</a>
+
  <!-- Hero Section -->
-<section class="h-screen relative flex items-center justify-center">
-
-  <!-- Background Image with Opacity -->
-  <div class="absolute inset-0 bg-[url('images/hero.png')] bg-cover bg-center z-0"></div>
-
-  <div class="absolute inset-0 bg-black opacity-20 z-0"></div>
-
-  <!-- Content -->
-  <div class="z-10 text-white text-center px-4">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Ayurveda for Wellness & Rejuvenation</h1>
-    <p class="text-lg md:text-xl mb-6"></p>
-    <a href="contact.html" class="bg-[#8BB96D] text-white font-semibold py-2 px-6 rounded-full hover:bg-[#7AAC5C]">
-      Book Appointment
-    </a>
+  <section class="relative w-full h-screen overflow-hidden">
+  
+  <!-- Slider Images -->
+  <div id="slider" class="slider-wrapper h-full">
+    <img src="images/hero4.avif" class="slider-image" />
+    <img src="images/hero1.png" class="slider-image" />
+    <img src="images/hero2.jpg" class="slider-image" />
+    <img src="images/hero3.jpg" class="slider-image" />
+    <img src="images/hero4.avif" class="slider-image" />
+    <img src="images/hero1.png" class="slider-image" />
   </div>
+
+  <!-- Hero Text Overlay -->
+  <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white bg-black/30 text-center px-4 z-10">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Ayurveda for True Wellness</h1>
+    <p class="text-base md:text-xl mb-6 hero-subheading">Natural healing for body, mind & soul</p>
+<div class="btns">
+    <a href="contact.html" class="bg-blue-600 text-white hover:bg-blue-800 border-2 border-white px-6 py-3 rounded-full font-semibold shadow-lg transition duration-300 hero-cta">Book Consultation</a>
+    <a href="services.html" class="bg-blue-600 text-white hover:bg-blue-800 border-2 border-white px-6 py-3 rounded-full font-semibold shadow-lg transition duration-300 hero-cta">Explore Therapies</a>
+
+</div>  
+</div>
+
+  <!-- Manual Control (optional) -->
+  <button id="prevBtn" class="absolute left-3 bottom-50 -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10">
+    <img src="images/previous.png" alt="left arrow" class="h-6 w-6 md:h-10 md:w-10">
+  </button>
 </section>
 
 
 
   <!-- About Section -->
-  <section class="py-16 px-4 md:px-16 bg-[#E6F4EA]" id="about">
+  <section class="py-16 px-4 md:px-16 bg-gray-200" id="about">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       <img src="images/about.png" alt="About Ayurveda" class="rounded-xl shadow-lg">
       <div>
-        <h2 class="text-3xl font-bold text-[#7AAC5C] mb-4">About Ayurveda</h2>
+        <h2 class="text-3xl font-bold text-blue-600 mb-4">About Ayurveda</h2>
         <p class="text-gray-700 text-justify mb-6">
           Ayurveda is derived from Sanskrit words "Ayur" (life) and "Veda" (science), meaning "Science of Life". It is one of the world's oldest holistic healing systems, developed more than 5000 years ago in India. Ayurveda emphasizes balance between the mind, body, and spirit to promote health and prevent disease.
           <br/><br/>
           The fundamental aim of Ayurveda is to protect the health of the healthy and to cure the disease of the ailing. It considers every individual unique and treats the root cause of disease, not just the symptoms.
         </p>
-        <a href="about.html" class="inline-block bg-[#8BB96D] text-white font-semibold py-3 px-6 rounded-full hover:bg-[#7AAC5C] transition">
-          Learn More About Ayurveda
+        <a href="about.html" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-800 transition">
+          About Ayurveda
         </a>
       </div>
     </div>
@@ -87,7 +157,7 @@
           <img src="images/doctor.png" alt="Dr. Sangeeta Rawat" class="w-full max-w-sm rounded-xl shadow-lg object-cover" />
         </div>
         <div>
-          <h2 class="text-4xl font-bold text-[#7AAC5C] mb-4">Meet the Doctor</h2>
+          <h2 class="text-4xl font-bold text-blue-600 mb-4">Meet the Doctor</h2>
           <h3 class="text-2xl font-semibold mb-2">Dr. Sangeeta Rawat</h3>
           <p class="text-gray-700 mb-2">B.A.M.S (Gurukul Kangri Govt. Ayurvedic College)</p>
           <p class="text-gray-700 mb-4">Ex. Medical Officer – Govt. Services, Uttarakhand & H.I.H.T Jolly Grant</p>
@@ -100,8 +170,8 @@
   </section>
 
   <!-- Services Section -->
-  <section class="py-16 px-4 md:px-16 bg-[#E6F4EA]" id="services">
-    <h2 class="text-3xl font-bold text-center text-[#7AAC5C] mb-10">Our Services</h2>
+  <section class="py-16 px-4 md:px-16 bg-gray-200" id="services">
+    <h2 class="text-3xl font-bold text-center text-blue-600 mb-10">Our Services</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
       <!-- Card 1 -->
       <div class="bg-white rounded-xl shadow-lg overflow-hidden">
@@ -138,7 +208,7 @@
     </div>
     <!-- CTA Button -->
     <div class="text-center">
-      <a href="services.html" class="inline-block bg-[#8BB96D] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#7AAC5C] transition">
+      <a href="services.html" class="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-800 transition">
         View All Services
       </a>
     </div>
@@ -149,7 +219,7 @@
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       <img src="images/panchkarma.png" alt="Panchakarma" class="rounded-xl shadow-lg">
       <div>
-        <h2 class="text-3xl font-bold text-[#7AAC5C] mb-4">Panchakarma Therapy</h2>
+        <h2 class="text-3xl font-bold text-blue-600 mb-4">Panchakarma Therapy</h2>
         <p class="text-gray-700 text-justify">
           Panchakarma is a set of five powerful Ayurvedic procedures designed for deep cleansing and rejuvenation. These include Vamana (emesis), Virechana (purgation), Basti (medicated enema), Nasya (nasal cleansing), and Raktamokshana (blood detox).
           <br/><br/>
@@ -160,8 +230,8 @@
   </section>
 
   <!-- Benefits Section -->
-  <section class="py-16 px-4 md:px-16 bg-[#E6F4EA]" id="benefits">
-    <h2 class="text-3xl font-bold text-center text-[#7AAC5C] mb-8">Who Can Benefit</h2>
+  <section class="py-16 px-4 md:px-16 bg-gray-200" id="benefits">
+    <h2 class="text-3xl font-bold text-center text-blue-600 mb-8">Who Can Benefit</h2>
     <div class="max-w-4xl mx-auto">
       <ul class="space-y-4 text-gray-700 list-disc pl-5 text-justify">
         <li>Individuals with chronic joint disorders such as arthritis, sciatica, ankylosing spondylitis, and back pain.</li>
@@ -176,14 +246,28 @@
 
   <!-- Contact CTA -->
   <section class="py-20 px-4 md:px-16 bg-white text-center" id="contact">
-    <h2 class="text-3xl md:text-4xl font-bold text-[#7AAC5C] mb-6">Begin Your Healing with Ayurveda</h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-6">Begin Your Healing with Ayurveda</h2>
     <p class="text-gray-700 text-base md:text-lg max-w-3xl mx-auto mb-8">
       Rebalance your mind, body, and soul through personalized Panchakarma therapies, doctor consultations, and holistic Ayurvedic care. Let us help you restore natural health.
     </p>
-    <a href="contact.html" class="inline-block bg-[#8BB96D] text-white font-semibold text-base py-3 px-8 rounded-full hover:bg-[#7AAC5C] transition duration-300">
+    <a href="contact.html" class="inline-block bg-blue-600 text-white font-semibold text-base py-3 px-8 rounded-full hover:bg-blue-800 transition duration-300">
       Book Your Consultation Now
     </a>
   </section>
+
+  <!-- Google Map-->
+
+<section class="w-full h-[400px] pt-16">
+  <iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1722.547465733679!2d78.02356236439826!3d30.291358979033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929a69582c499%3A0x4ff52166418db50a!2sRAWAT%20AYURVEDIC%20%26%20PANCHAKARMA%20CENTRE!5e0!3m2!1sen!2sin!4v1754887962973!5m2!1sen!2sin"    width="100%" height="100%" 
+    width="100%" height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"
+    class="w-full h-full">
+  </iframe>
+</section>
 
   <footer class="bg-gray-900 text-white py-12 px-4 md:px-10">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-8">
@@ -191,7 +275,10 @@
     <!-- Column 1: Logo & About -->
     <div>
       <div class="flex items-center gap-2 mb-4">
-        <img src="images/logo.png" alt="Logo" class="h-20">
+        <a href="index.html" class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="Logo" class="h-15 w-auto p-1"/>
+        <h1 class="text-xs md:text-sm font-bold text-blue-600">Rawat Ayurvedic & <br>Panchkarma Center</h1>
+      </a>
       </div>
       <p class="text-xs leading-relaxed mb-4">
       At Rawat Ayurvedic & Panchkarma Center, we blend ancient Ayurvedic wisdom with authentic Panchkarma therapies to heal the body, mind, and soul naturally.
@@ -264,14 +351,8 @@ drsangeetarawat@gmail.com
   </div>
 </footer>
 
-  <!-- JS -->
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('mobile-menu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
+  <!-- Linking javaScript -->
+ <script src="script.js"></script>
 
 </body>
 </html>
